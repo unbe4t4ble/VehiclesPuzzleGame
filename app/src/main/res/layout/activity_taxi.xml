@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/start"
+    tools:context="kidzania.vehiclespuzzlegame.Fire">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:maxLines="1"
+        android:padding="5dp"
+        android:shadowColor="#FFFF0000"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="8"
+        android:textColor="#ffcc0000"
+        android:textSize="250sp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/taxi_mobil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/taxi_tanpa_ban"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:id="@+id/taxi_depan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/taxi_ban_kosong"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_alignBottom="@+id/taxi_mobil"
+        android:layout_alignLeft="@+id/taxi_mobil"
+        android:layout_alignStart="@+id/taxi_mobil" />
+
+    <ImageView
+        android:id="@+id/taxi_belakang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/taxi_ban_kosong"
+        android:layout_alignBottom="@+id/taxi_mobil"
+        android:layout_alignRight="@+id/taxi_mobil"
+        android:layout_alignEnd="@+id/taxi_mobil"
+        android:layout_marginRight="78dp"
+        android:layout_marginEnd="78dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/gradient"
+        android:id="@+id/layBanTaxi"
+        android:weightSum="1">
+
+
+        <ImageView
+            android:id="@+id/ban_sepeda"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/sepeda_ban" />
+
+        <ImageView
+            android:id="@+id/ban_fire"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/ban_sepeda"
+            android:layout_marginLeft="50dp"
+            android:src="@drawable/fire_ban" />
+
+        <ImageView
+            android:id="@+id/ban_bus"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/ban_fire"
+            android:layout_marginLeft="50dp"
+            android:src="@drawable/bus_ban" />
+
+        <ImageView
+            android:id="@+id/ban_taxi"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/ban_sepeda"
+            android:layout_marginRight="50dp"
+            android:src="@drawable/taxi_ban" />
+
+        <ImageView
+            android:id="@+id/ban_traktor"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/ban_taxi"
+            android:layout_marginRight="50dp"
+            android:src="@drawable/tracktor_ban" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

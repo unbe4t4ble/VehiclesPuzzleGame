@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/start"
+    tools:context="kidzania.vehiclespuzzlegame.SliceBan">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:maxLines="1"
+        android:padding="5dp"
+        android:shadowColor="#FFFF0000"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="8"
+        android:textColor="#ffcc0000"
+        android:textSize="250sp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/ban_belum_utuh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:src="@drawable/ban_belum_utuh"/>
+
+    <ImageView
+        android:id="@+id/kosong_kiri_atas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/kosong_kiri_atas"
+        android:layout_marginLeft="310dp"
+        android:layout_marginTop="70dp"/>
+
+    <ImageView
+        android:id="@+id/kosong_kanan_atas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/kosong_kanan_atas"
+        android:layout_toRightOf="@id/kosong_kiri_atas"
+        android:layout_marginTop="70dp"/>
+
+    <ImageView
+        android:id="@+id/kosong_kiri_bawah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/kosong_kiri_bawah"
+        android:layout_below="@id/kosong_kiri_atas"
+        android:layout_marginLeft="310dp"/>
+
+    <ImageView
+        android:id="@+id/kosong_kanan_bawah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/kosong_kanan_bawah"
+        android:layout_toRightOf="@+id/kosong_kiri_bawah"
+        android:layout_below="@+id/kosong_kanan_atas"/>
+
+
+
+    <ImageView
+        android:id="@+id/kanan_atas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/kanan_atas"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginBottom="30dp"/>
+
+    <ImageView
+        android:id="@+id/kiri_bawah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/kiri_bawah"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/kanan_atas"
+        android:layout_marginLeft="40dp"
+        android:layout_marginBottom="30dp"/>
+
+
+
+    <ImageView
+        android:id="@+id/kiri_atas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/kiri_atas"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/kiri_bawah"
+        android:layout_marginLeft="40dp"
+        android:layout_marginBottom="30dp"/>
+
+    <ImageView
+        android:id="@+id/kanan_bawah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/kanan_bawah"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/kiri_atas"
+        android:layout_marginLeft="40dp"
+        android:layout_marginBottom="30dp"/>
+</RelativeLayout>

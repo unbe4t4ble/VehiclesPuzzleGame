@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/start"
+    tools:context="kidzania.vehiclespuzzlegame.MainMenu">
+
+    <ImageButton
+        android:id="@+id/btnTaxi"
+        android:layout_width="350dp"
+        android:layout_height="170dp"
+        android:scaleType="fitCenter"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="100dp"
+        android:src="@drawable/taxi_tanpa_ban"
+        android:background="@drawable/ripple_effect"/>
+
+    <ImageButton
+        android:id="@+id/btnFire"
+        android:layout_width="350dp"
+        android:layout_height="170dp"
+        android:scaleType="fitCenter"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="100dp"
+        android:layout_toRightOf="@+id/btnTaxi"
+        android:src="@drawable/fire_tanpa_ban"
+        android:background="@drawable/ripple_effect"/>
+
+    <ImageButton
+        android:id="@+id/btnHospital"
+        android:layout_width="350dp"
+        android:layout_height="170dp"
+        android:scaleType="fitCenter"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="100dp"
+        android:layout_below="@+id/btnTaxi"
+        android:src="@drawable/hospital_tanpa_ban"
+        android:background="@drawable/ripple_effect"/>
+
+    <ImageButton
+        android:id="@+id/btnBus"
+        android:layout_width="350dp"
+        android:layout_height="170dp"
+        android:scaleType="fitCenter"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="100dp"
+        android:layout_toRightOf="@+id/btnHospital"
+        android:layout_below="@+id/btnFire"
+        android:src="@drawable/bus_tanpa_ban"
+        android:background="@drawable/ripple_effect"/>
+
+</RelativeLayout>
